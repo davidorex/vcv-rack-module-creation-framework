@@ -1,6 +1,8 @@
-# VCV Rack Module Freedom System
+# VCV Rack Module Creation Framework
 
 **AI-assisted VCV Rack module development through conversational creation**
+
+This repo represents a Claude-Code'd transposition of TÂCHES' plugin-freedom-system to key of VCV Rack module development. 
 
 Build professional VCV Rack modules by describing what you want. Claude Code orchestrates the entire workflow from ideation to distribution.
 
