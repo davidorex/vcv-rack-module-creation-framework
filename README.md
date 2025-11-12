@@ -108,29 +108,39 @@ All stages reference:
 
 ## Requirements
 
-### Dependencies
+### Module Development Dependencies
+
+**Minimal requirements for developing modules (not building VCV Rack itself):**
 
 **All Platforms:**
 - C++11 compiler (g++ or clang++)
-- Git
-- Make (official VCV build system)
-- Python 3 (for helper.py)
+- Make 3.81+
+- Python 3.8+
+- jq (JSON processor, used by Makefile)
+- Git (recommended for version control)
 
 **Mac (via Homebrew):**
 ```bash
-brew install git cmake autoconf automake libtool jq python zstd pkg-config
+# Minimal install for module development
+brew install jq python3
+
+# Git and compiler included with Xcode Command Line Tools
+xcode-select --install
 ```
 
-**Linux (Ubuntu 16.04+):**
+**Linux (Ubuntu/Debian):**
 ```bash
-apt-get install build-essential git gdb curl cmake libx11-dev libglu1-mesa-dev \
-    libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev zlib1g-dev
+# Minimal install for module development
+sudo apt-get install build-essential python3 jq git
 ```
 
 **Windows (MSYS2 MinGW 64-bit):**
 ```bash
-pacman -S git gcc gdb cmake autoconf automake libtool jq python zstd pkgconf
+# Minimal install for module development
+pacman -S gcc make python jq git
 ```
+
+**Note:** The VCV Rack SDK is self-contained and includes all necessary headers and libraries. Additional dependencies like `cmake`, `pkg-config`, `autoconf`, etc. are only needed if you're building VCV Rack itself from source, not for module development.
 
 ### VCV Rack SDK
 
