@@ -4,7 +4,9 @@
 
 This repo represents an as-yet untested Claude-Code'd transposition of TÂCHES' https://github.com/glittercowboy/plugin-freedom-system to the key of VCV Rack module development. 
 
-Build professional VCV Rack modules by describing what you want. Claude Code orchestrates the entire workflow from ideation to distribution.
+The aim: Build VCV Rack modules by describing what you want. Claude Code orchestrates the entire workflow from ideation to distribution.
+
+Next steps: trying it and working out bugs, if any. 👌
 
 ---
 
